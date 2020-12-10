@@ -21,6 +21,7 @@ class CalendarHeader extends Component {
     fontSize: PropTypes.number,
     headerText: PropTypes.string,
     onHeaderSelected: PropTypes.func,
+    renderCustomHeaderComponent: PropTypes.func,
   };
 
   shouldComponentUpdate(nextProps) {
