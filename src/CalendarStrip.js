@@ -504,6 +504,7 @@ class CalendarStrip extends Component {
         fontSize={this.state.monthFontSize}
         allowHeaderTextScaling={this.props.shouldAllowFontScaling}
         headerText={this.props.headerText}
+        renderCustomHeaderComponent={this.props.renderCustomHeaderComponent}
       />
     );
   }
