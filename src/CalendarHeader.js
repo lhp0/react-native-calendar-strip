@@ -77,14 +77,14 @@ class CalendarHeader extends Component {
       weekStartDate: _weekStartDate,
       weekEndDate: _weekEndDate,
       headerText,
-      HeaderComponent,
+      renderCustomHeaderComponent,
     } = this.props;
     const _headerText = headerText || this.formatCalendarHeader(calendarHeaderFormat);
     const weekStartDate = _weekStartDate && _weekStartDate.clone();
     const weekEndDate = _weekEndDate && _weekEndDate.clone();
 
-    if (HeaderComponent) {
-      return <HeaderComponent />
+    if (renderCustomHeaderComponent) {
+      return renderCustomHeaderComponent();
     }
 
     return (
